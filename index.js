@@ -14,7 +14,6 @@ client.on('typingStart', (channel, user) => {
 })
 client.on('voiceStateUpdate', (oldMember, newMember) => {
   let pc = client.channels.fetch(`712014015861096592`);
-  console.log(pc);
-  pc.then(channel => newMember.setChannel(channel, "RUTSCHEN")).catch();
+  pc.then(channel => console.log(channel)).catch();
 })
 client.login("NzEyMDczNjc4NTU2NDk1OTQy.XsMQeA.m_uOt7yRep0fiAQ_QkHN1GuFBAI")
