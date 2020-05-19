@@ -20,9 +20,8 @@ client.on("message", msg => {
 
 // Send the client down a slide upon entry of specific channel
 client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
-  let pc = client.channels.fetch(`712014015861096592`);
+  let pc = client.channels.fetch(`712014015861096592`); // Start ID of the slide
   console.log(newVoiceState.channelID);
-  //console.log(pc)
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
     newVoiceState.setChannel("712014066671026286","Rutschen");
@@ -35,6 +34,7 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
     newVoiceState.setChannel("712117279256739930","Rutschen");
     newVoiceState.setChannel("712117548736577618","Rutschen");
     newVoiceState.setChannel("712118114703376474","Rutschen");
+    newVoiceState.setChannel("712118274082734110","Rutschen");
   }
 })
 
