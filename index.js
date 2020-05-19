@@ -40,7 +40,7 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
     let diff = Date.now() - d;
     let n = newVoiceState.member.nickname;
     client.channels.cache.get("712124171991384155").send("Du hast "+diff+" ms zum Rutschen gebraucht, "+n+" !");
-  }else(712118114703376474  == newVoiceState.channelID){
+  }else if(712118114703376474  == newVoiceState.channelID){
       console.log("nsertadiu");
   }
 })
