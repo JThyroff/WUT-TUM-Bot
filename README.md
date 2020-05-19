@@ -6,7 +6,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 * Clone the repository
 * Install `nodejs`
-* Run `npm rebuild`from the repository's root directory
+* Run `npm install`from the repository's root directory
 
 ## Features
 
