@@ -13,7 +13,7 @@ client.on("ready", () => {
 
 // Event listener for messages
 client.on("message", msg => {
-  if (msg.content === "ping") {
+  if (msg.content === "help") {
     msg.reply("Sprich Deutsch du Hurensohn!")
   }
 })
@@ -24,6 +24,7 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
   console.log(newVoiceState.channelID);
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
+    let d = Date.now();
     newVoiceState.setChannel("712014066671026286","Rutschen");
     newVoiceState.setChannel("712013990170984608","Rutschen");
     newVoiceState.setChannel("712014759049822230","Rutschen");
