@@ -1,4 +1,4 @@
-# ![TUMBot Logo](https://github.com/JThyroff/TUM-Bot/blob/feature/readme/favicon-96x96.png)TUM Bot
+# ![TUMBot Logo](../../tumbot.png)TUM Bot
 
 ## Getting Started
 
