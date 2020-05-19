@@ -20,9 +20,6 @@ client.on("message", msg => {
 
 // Send the client down a slide upon entry of specific channel
 client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
-  let pc = client.channels.fetch(`712014015861096592`);
-  console.log(newVoiceState.channelID);
-  //console.log(pc)
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
     let d = Date.now();
