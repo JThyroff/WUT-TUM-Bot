@@ -35,7 +35,8 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
     newVoiceState.setChannel("712117279256739930","Rutschen");
     newVoiceState.setChannel("712117548736577618","Rutschen");
     newVoiceState.setChannel("712118114703376474","Rutschen");
-    newVoiceState.setChannel("712118274082734110","Rutschen");
+    Date.now() - d;
+    client.channels.fetch("712124171991384155").then(channel => channel.send("eee"));
   }
 })
 
