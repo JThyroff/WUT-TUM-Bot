@@ -13,8 +13,8 @@ client.on("message", msg => {
 client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
   let pc = client.channels.fetch(`712014015861096592`);
   console.log(newVoiceState.channelID);
-  console.log(pc)
-  if(pc === newVoiceState.channelID){
+  //console.log(pc)
+  if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
   }
 })
