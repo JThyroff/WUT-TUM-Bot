@@ -6,6 +6,9 @@ const client = new Discord.Client()
 
 const { Client, MessageEmbed } = require('discord.js');
 
+// Log in bot using token
+client.login("NzEyMDczNjc4NTU2NDk1OTQy.XsMQeA.m_uOt7yRep0fiAQ_QkHN1GuFBAI")
+
 // Wait for bot to be ready before reacting to Commands
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`)
@@ -20,8 +23,6 @@ client.on("message", msg => {
 
 // Send the client down a slide upon entry of specific channel
 client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
-  let pc = client.channels.fetch(`712014015861096592`); // Start ID of the slide
-  console.log(newVoiceState.channelID);
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
     let d = Date.now();
@@ -35,10 +36,11 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
     newVoiceState.setChannel("712117279256739930","Rutschen");
     newVoiceState.setChannel("712117548736577618","Rutschen");
     newVoiceState.setChannel("712118114703376474","Rutschen");
-    Date.now() - d;
-    client.channels.fetch("712124171991384155").then(channel => channel.send("eee"));
+
+    let diff = Date.now() - d;
+    let n = newVoiceState.member.nickname;
+    client.channels.cache.get("712124171991384155").send("Du hast "+diff+" ms zum Rutschen gebraucht, "+n+" !");
+  }else(712118114703376474  == newVoiceState.channelID){
+      console.log("nsertadiu");
   }
 })
-
-// Log in bot using token
-client.login("NzEyMDczNjc4NTU2NDk1OTQy.XsMQeA.m_uOt7yRep0fiAQ_QkHN1GuFBAI")
