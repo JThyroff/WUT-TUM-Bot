@@ -11,5 +11,3 @@ These instructions will get you a copy of the project up and running on your loc
 ## Features
 
 Slide your way through the server! **TODO**
-
-## Con
