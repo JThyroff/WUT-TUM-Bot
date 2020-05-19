@@ -7,7 +7,7 @@
     "dev": "nodemon index.js"
   },
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^12.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
