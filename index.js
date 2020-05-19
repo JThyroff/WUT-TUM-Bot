@@ -26,6 +26,15 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
     newVoiceState.setChannel("712014066671026286","Rutschen");
+    newVoiceState.setChannel("712013990170984608","Rutschen");
+    newVoiceState.setChannel("712014759049822230","Rutschen");
+    newVoiceState.setChannel("712016182953115798","Rutschen");
+    newVoiceState.setChannel("712016207338930299","Rutschen");
+    newVoiceState.setChannel("712016252557852672","Rutschen");
+    newVoiceState.setChannel("712016273168400395","Rutschen");
+    newVoiceState.setChannel("712117279256739930","Rutschen");
+    newVoiceState.setChannel("712117548736577618","Rutschen");
+    newVoiceState.setChannel("712118114703376474","Rutschen");
   }
 })
 
