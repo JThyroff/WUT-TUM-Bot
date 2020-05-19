@@ -1,4 +1,4 @@
-# ![TUMBot Logo](../../tumbot.png)TUM Bot
+# ![TUMBot Logo](tumbot.png)TUM Bot
 
 ## Getting Started
 
