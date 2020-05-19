@@ -16,6 +16,7 @@ client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
   //console.log(pc)
   if(712014015861096592 == newVoiceState.channelID){
     console.log("Rutschen!")
+    newVoiceState.setChannel("712014066671026286","Rutschen");
   }
 })
 client.login("NzEyMDczNjc4NTU2NDk1OTQy.XsMQeA.m_uOt7yRep0fiAQ_QkHN1GuFBAI")
