@@ -10,9 +10,12 @@ client.on("message", msg => {
   }
 })
 
-client.on('voiceStateUpdate', (oldMember, newMember) => {
+client.on('voiceStateUpdate', (oldVoiceState, newVoiceState) => {
   let pc = client.channels.fetch(`712014015861096592`);
-  pc.then(channel => console.log(channel)).catch();
-  newMember.setChannel(channel)
+  console.log(newVoiceState.channelID);
+  console.log(pc)
+  if(pc === newVoiceState.channelID){
+    console.log("Rutschen!")
+  }
 })
 client.login("NzEyMDczNjc4NTU2NDk1OTQy.XsMQeA.m_uOt7yRep0fiAQ_QkHN1GuFBAI")
