@@ -1,3 +1,3 @@
 module.exports = message => {
-    message.reply("Block")
+    message.reply("Block!")
 }
