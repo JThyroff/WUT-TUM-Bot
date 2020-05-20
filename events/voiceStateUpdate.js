@@ -4,7 +4,7 @@ var map = new Map();
 // Variable to store client's name
 var name
 
-const slideCategoryName = 'rutschxe'
+const slideCategoryName = 'rutsche'
 const scoreboardChannelName = 'scoreboard'
 
 module.exports = (client, oldVoiceState, newVoiceState) => {
